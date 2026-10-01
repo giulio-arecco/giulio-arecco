@@ -75,7 +75,7 @@ jobs:
           config_timezone: Europe/Rome
           plugin_lines: yes
           plugin_lines_history_limit: 1
-          plugin_lines_repositories_limit: 4
+          plugin_lines_repositories_limit: 6
           plugin_lines_sections: repositories
           retries: 3
           retries_delay: 20
