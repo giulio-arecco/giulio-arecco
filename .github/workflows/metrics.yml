@@ -71,3 +71,26 @@ jobs:
           retries_delay: 20
           retries_output_action: 3
           retries_delay_output_action: 15
+
+      - name: Featured Repositories
+        uses: lowlighter/metrics@latest
+        continue-on-error: true
+        with:
+          filename: metrics.repositories.svg
+          committer_branch: metrics-renders
+          committer_message: "chore(metrics): update featured repositories activity"
+          user: giulio-arecco
+          repositories_affiliations: owner, collaborator
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_repositories: yes
+          plugin_repositories_featured: >-
+            giulio-arecco/zig-path-tracer,
+            giulio-arecco/beyond-the-line,
+            LienoPC/OS161-DemandPaging,
+            giulio-arecco/the-plague-in-milan
+          plugin_repositories_order: featured
+          retries: 3
+          retries_delay: 20
+          retries_output_action: 3
+          retries_delay_output_action: 15
