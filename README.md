@@ -9,7 +9,7 @@
 - From high-level systems to low-level optimization
 - [Portfolio](https://giulio-arecco.github.io) · [LinkedIn](https://linkedin.com/in/giulio-arecco) · [Email](mailto:giulioarecco@gmail.com)
 
-## Featured Projects
+## Featured Repositories
 
 <table>
   <tr>
@@ -58,4 +58,4 @@
   </tr>
 </table>
 
-<strong> [See More](https://giulio-arecco.github.io) </strong>
+<strong> [See More](https://giulio-arecco.github.io/projects/) </strong>
