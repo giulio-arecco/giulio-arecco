@@ -43,20 +43,29 @@ jobs:
           committer_branch: metrics-renders
           committer_message: "chore(metrics): update languages activity"
           user: giulio-arecco
+          repositories_affiliations: owner, collaborator
           template: classic
           base: ""
           config_timezone: Europe/Rome
           plugin_languages: yes
-          plugin_languages_analysis_timeout: 15
-          plugin_languages_analysis_timeout_repositories: 7.5
-          plugin_languages_categories: markup, programming
-          plugin_languages_colors: github
+          # In depth mode:
+          plugin_languages_indepth: yes
+          commits_authoring: giulio-arecco, giulioarecco@gmail.com
+          plugin_languages_analysis_timeout: 4
+          plugin_languages_analysis_timeout_repositories: 1.5
+          plugin_languages_categories: programming
+          plugin_languages_ignored: >-
+            shaderlab, cg, unity-script,
+            html, css, tex, less, dockerfile, makefile, cmake,
+            shell, batchfile, powershell,
+            json, xml, yaml, ini
+          plugin_languages_sections: most-used
           plugin_languages_details: percentage
           plugin_languages_limit: 6
+          plugin_languages_threshold: 1%
           plugin_languages_other: yes
-          plugin_languages_sections: most-used
-          plugin_languages_threshold: 0%
-          retries: 3
+          plugin_languages_colors: github
+          retries: 2
           retries_delay: 20
           retries_output_action: 3
           retries_delay_output_action: 15
@@ -70,6 +79,7 @@ jobs:
           committer_branch: metrics-renders
           committer_message: "chore(metrics): update lines of code"
           user: giulio-arecco
+          repositories_affiliations: owner, collaborator
           template: classic
           base: ""
           config_timezone: Europe/Rome
