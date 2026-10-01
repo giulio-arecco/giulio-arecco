@@ -54,10 +54,7 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 6
           plugin_languages_other: yes
-          plugin_languages_recent_categories: markup, programming
-          plugin_languages_recent_days: 14
-          plugin_languages_recent_load: 300
-          plugin_languages_sections: most-used, recently-used
+          plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
           retries: 3
           retries_delay: 20
@@ -79,29 +76,7 @@ jobs:
           plugin_lines: yes
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
-          plugin_lines_sections: base
-          retries: 3
-          retries_delay: 20
-          retries_output_action: 3
-          retries_delay_output_action: 15
-
-      - name: Random Code Snippet
-        uses: lowlighter/metrics@latest
-        continue-on-error: true
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          filename: metrics.snippet.svg
-          committer_branch: metrics-renders
-          committer_message: "chore(metrics): update random code snippet"
-          user: giulio-arecco
-          template: classic
-          base: ""
-          config_timezone: Europe/Rome
-          plugin_code: yes
-          plugin_code_days: 30
-          plugin_code_lines: 12
-          plugin_code_load: 250
-          plugin_code_visibility: public
+          plugin_lines_sections: repository
           retries: 3
           retries_delay: 20
           retries_output_action: 3
