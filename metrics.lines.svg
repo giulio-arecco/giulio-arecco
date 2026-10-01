@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="139" class="">
     <defs>
         <style/>
     </defs>
@@ -38,6 +38,12 @@
                                 <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                             </svg>
                             <span class="diff-handle">giulio-arecco/giulio-arecco.github.io</span>
+                        </div>
+                        <div class="field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
+                            </svg>
+                            <span class="diff-handle">giulio-arecco/misfortune-game</span>
                         </div>
                     </section>
                     <section>
@@ -86,6 +92,18 @@
                             <div class="diff-stats">
                                 <span class="added"> +7.83k</span>
                                 <span class="deleted"> -6.54k</span>
+                            </div>
+                            <span> </span>
+                        </div>
+                        <div class="field">
+                            <div class="diff-box added"></div>
+                            <div class="diff-box added"></div>
+                            <div class="diff-box added"></div>
+                            <div class="diff-box added"></div>
+                            <div class="diff-box deleted"></div>
+                            <div class="diff-stats">
+                                <span class="added"> +9.29k</span>
+                                <span class="deleted">   -909</span>
                             </div>
                             <span> </span>
                         </div>
