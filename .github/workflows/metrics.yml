@@ -3,6 +3,7 @@ name: Metrics
 on:
   schedule:
     - cron: "0 0 */3 * *"
+    - cron: "0 2 */15 * *"
   workflow_dispatch:
 
 concurrency:
@@ -35,6 +36,7 @@ jobs:
           retries_delay_output_action: 15
 
       - name: Languages Activity
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 2 */15 * *'
         uses: lowlighter/metrics@latest
         continue-on-error: true
         with:
@@ -48,11 +50,11 @@ jobs:
           base: ""
           config_timezone: Europe/Rome
           plugin_languages: yes
-          # In depth mode:
+          # --- Indepth Mode ---
           plugin_languages_indepth: yes
           commits_authoring: giulio-arecco, giulioarecco@gmail.com
-          plugin_languages_analysis_timeout: 4
-          plugin_languages_analysis_timeout_repositories: 1.5
+          plugin_languages_analysis_timeout: 20
+          plugin_languages_analysis_timeout_repositories: 5
           plugin_languages_categories: programming
           plugin_languages_ignored: >-
             shaderlab, cg, unity-script,
