@@ -12,8 +12,6 @@
 
 ![Languages](https://raw.githubusercontent.com/giulio-arecco/giulio-arecco/metrics-renders/metrics.languages.svg)
 
-![Lines of Code](https://raw.githubusercontent.com/giulio-arecco/giulio-arecco/metrics-renders/metrics.lines.svg)
-
 ## Featured Repositories
 
 <table>
