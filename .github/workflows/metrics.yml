@@ -17,11 +17,11 @@ jobs:
       contents: write
     steps:
       - name: Isometric Calendar
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 0 */3 * *'
         uses: lowlighter/metrics@latest
         continue-on-error: true
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 0 */3 * *'
           filename: metrics.isocalendar.svg
           committer_branch: metrics-renders
           committer_message: "chore(metrics): update isometric calendar"
@@ -74,6 +74,7 @@ jobs:
           retries_delay_output_action: 15
 
       - name: Featured Repositories
+        if: github.event_name == 'workflow_dispatch'
         uses: lowlighter/metrics@latest
         continue-on-error: true
         with:
@@ -86,7 +87,7 @@ jobs:
           base: ""
           plugin_repositories: yes
           plugin_repositories_featured: >-
-            giulio-arecco/ue5-action-rpg
+            giulio-arecco/ue5-action-rpg,
             giulio-arecco/beyond-the-line,
             giulio-arecco/zig-path-tracer,
             giulio-arecco/the-plague-in-milan,
